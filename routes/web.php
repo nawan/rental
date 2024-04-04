@@ -31,11 +31,6 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-// Route::get('/generate', function () {
-//     \Illuminate\Support\Facades\Artisan::call('storage:link');
-//     echo 'ok';
-// });
-
 Route::get('/generate', function () {
     \Illuminate\Support\Facades\Artisan::call('storage:link');
     echo 'berhasil membuat symlink';
